@@ -5,8 +5,8 @@
  **/
 class Solution {
 public:
-    Node* cloneGraph(Node* node) {
-        if (!node) {
+    Node* cloneGraph(Node* node) { // Stores the address of any variable of type 'node' 
+        if (!node) { //Check if root is Null
             return NULL;
         }
         Node* copy = new Node(node -> val, {});
